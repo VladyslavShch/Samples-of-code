@@ -1,0 +1,4 @@
+Hello {*user_name},
+Great thanks, that your deside to use services of our company.
+Your order with number {*order_number} will be delivered within 10 working days after {current_date}.
+ With Respect, Administration of Internet Store.
