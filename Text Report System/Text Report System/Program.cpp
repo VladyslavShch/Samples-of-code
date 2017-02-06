@@ -29,12 +29,9 @@ void main(int argc, char* argv[])
 	{
 
 		if (!(argc == 3 || argc == 1))
-			throw std::logic_error("It should be name of programm and two (or no one) arguments in command line!");
+			throw std::logic_error("It should be three arguments in command line:\n [name_of_program] [ini_file] [template_of_report]");
 
-		Controller c(
-			  (argc == 3) ? argv[1] : "params.ini" 
-			, (argc == 3) ? argv[2] : "report_template.txt"
-		);
+		Controller c( argv[1], argv[2] );
 
 		c.addFuncParameter("current_date", date);
 
